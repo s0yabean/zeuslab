@@ -6,3 +6,4 @@ pytz==2022.7.1
 langchain==0.0.94
 dropbox==11.36.0
 python-dotenv==1.0.0
+openai==0.27.1
