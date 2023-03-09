@@ -45,7 +45,7 @@ def gsheet_setup():
     # to submit data to google sheets
     # Define the scope of the credentials and authenticate the API client
     scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
-    creds = ServiceAccountCredentials.from_json_keyfile_name("credentials.json", scope)
+    #creds = ServiceAccountCredentials.from_json_keyfile_name("credentials.json", scope)
     creds = ServiceAccountCredentials.from_json_keyfile_dict(create_keyfile_dict(), scope)
     client = gspread.authorize(creds)
 
